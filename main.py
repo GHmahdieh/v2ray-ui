@@ -148,7 +148,6 @@ class V2RayConfigurator(QWidget):
         region = QRegion(path.toFillPolygon().toPolygon())
         self.setMask(region)
 
-    # اضافه شده: هر بار که پنجره resize می‌شود، گوشه‌های گرد تنظیم شود
     def resizeEvent(self, event):
         super().resizeEvent(event)
         self.set_rounded_corners()
